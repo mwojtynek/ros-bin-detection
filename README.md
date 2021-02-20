@@ -14,5 +14,5 @@ The software runs under the robot framework ROS (version: Hydro Release) and sta
 ### launch the state machine:
 - roslaunch state_machine state_machine.launch
 <br>
-Bochum, 06.01.2015
+Bochum, 06.01.2015<br>
 Michael Wojtynek
