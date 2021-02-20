@@ -1,0 +1,6 @@
+	<launch>
+		<param name="octomap_frame" type="string" value="base_link" />
+		<param name="octomap_resolution" type="double" value="0.03" />
+		<param name="max_range" type="double" value="2.0" />
+		<rosparam file="$(find ur5_iml_moveit_config)/config/sensor_xtion.yaml"/>
+	</launch>

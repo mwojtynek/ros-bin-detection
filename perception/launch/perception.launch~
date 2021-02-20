@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- start Perception application -->
+	<node pkg="perception" type="perception" name="perception" output="screen"/>
+
+</launch>

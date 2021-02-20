@@ -1,0 +1,10 @@
+ur5_ikfast:
+  kinematics_solver: ur5_iml_ur5_ikfast_kinematics/IKFastKinematicsPlugin
+  kinematics_solver_attempts: 3
+  kinematics_solver_search_resolution: 0.005
+  kinematics_solver_timeout: 0.005
+ur5_manipulator:
+  kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+  kinematics_solver_attempts: 3
+  kinematics_solver_search_resolution: 0.005
+  kinematics_solver_timeout: 0.005

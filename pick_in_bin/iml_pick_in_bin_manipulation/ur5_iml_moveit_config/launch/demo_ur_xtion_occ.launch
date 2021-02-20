@@ -1,0 +1,51 @@
+<launch>
+
+  <!-- By default, we do not start a database (it can be large) -->
+  <arg name="db" default="false" />
+
+  <!-- By default, we are not in debug mode -->
+  <arg name="debug" default="false" />
+
+  <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
+  <include file="$(find ur5_iml_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+  <!-- If needed, broadcast static tf for robot root -->  
+
+  <!-- Given the published joint states, publish tf for the robot links -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
+
+  <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
+  <include file="$(find ur5_iml_moveit_config)/launch/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>  
+    <arg name="fake_execution" value="false"/>
+    <arg name="info" value="false"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+  <!-- Run openni2 driver for Asus Xtion or Microsoft Kinnect -->
+  <!-- Run openni2 driver for Asus Xtion -->
+  <include file="$(find openni2_launch)/launch/openni2.launch" ns="camera_top">
+		<arg name="device_id" value="2@1d27:0601"/>		
+		<arg name="depth_registration" value="true" />
+	</include>
+
+  <include file="$(find openni2_launch)/launch/openni2.launch" ns="camera_flange">
+		<arg name="depth_registration" value="true" />
+		<arg name="device_id" value="1@1d27:0600"/>
+	</include>
+
+  <!--Run TF coordinate transformation with z = +2.41m and pitch = 90° = PI/2 = 1.57 -->
+  <node pkg="tf" type="static_transform_publisher" name="camera_broadcaster" args="0 0.125 2.30 0 1.57 0 base_link camera_link 100" />
+
+  <!-- Run occupancy map moniton and sensors functionality -->
+  <include ns="move_group" file="$(find ur5_iml_moveit_config)/launch/ur5_iml_moveit_sensor_manager_xtion.launch.xml">
+  </include>
+
+  <!-- Run Rviz and load the xtion config -->
+  <node pkg="rviz" args="-d $(find ur5_iml_moveit_config)/rviz_config/rviz_config_xtion.rviz" type="rviz" name="rviz" output="screen" respawn="false">
+  </node>
+
+</launch>
+

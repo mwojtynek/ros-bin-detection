@@ -1,0 +1,12 @@
+<launch>  
+
+<!-- Run swissranger_camera driver for MESA SR4000 -->
+  <include file="$(find swissranger_camera)/launch/sr_eth.launch">
+  </include>
+
+  <!--Run TF coordinate transformation with x = -0.15m, y = -0.052m, z = 2.41 and pitch = 180° = PI = 3.14 -->
+  <node pkg="tf" type="static_transform_publisher" name="pick_in_bin_sr4000" args="-0.15 -0.052 2.38 0 -3.14 0 base_link pick_in_bin_sr4000_link 0.02" >
+   <remap from="/camera" to="/pick_in_bin_sr4000_link"/>
+	</node>
+
+</launch>  

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- start image_view application -->
+	<node pkg="image_view" type="image_saver" name="image_saver" output="screen">
+		<!-- PCL Cloud -->
+    <remap from="image_pcl" to="camera_flange/camera/depth_registered/points"/> 
+		<!-- RGB Picture -->
+    <remap from="image_rgb" to="/camera_flange/camera/rgb/image_raw"/> 
+    <!--remap from="image" to="/camera/depth/points"/-->
+	    <param name="filename_format_pcl" value="/home/techlab02/catkin_ws/src/state_machine/box_images/frame%s.pcd"/>
+	    <param name="filename_format_rgb" value="/home/techlab02/catkin_ws/src/state_machine/box_images/frame%s.jpg"/>
+	</node>
+</launch>

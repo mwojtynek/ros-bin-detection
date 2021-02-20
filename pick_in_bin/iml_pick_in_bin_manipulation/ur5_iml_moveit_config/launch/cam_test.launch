@@ -1,0 +1,31 @@
+<launch>
+
+  <!-- Run openni2 driver for Asus Xtion or Microsoft Kinnect >
+  <include file="$(find openni2_launch)/launch/openni2.launch">
+ 	<arg name="depth_registration" value="true" />
+	</include-->
+
+  <include file="$(find openni2_launch)/launch/openni2.launch" ns="camera1">
+		<arg name="device_id" value="1@1d27:0600"/>		
+		<arg name="depth_registration" value="true" />
+	</include>
+
+  <include file="$(find openni2_launch)/launch/openni2.launch" ns="camera2">
+		<arg name="depth_registration" value="true" />
+		<arg name="device_id" value="2@1d27:0601"/>
+	</include>
+
+
+  <!-- Run Perception Node -->
+  <!--include file="$(find perception)/launch/perception.launch">
+  </include-->
+
+  <!--Run TF coordinate transformation with z = +2.41m and pitch = 90° = PI/2 = 1.57 -->
+  <!--node pkg="tf" type="static_transform_publisher" name="camera_broadcaster" args="0.06 0.120 2.35 0 1.67 0 base_link camera_link 100" /-->
+  <!--node pkg="tf" type="static_transform_publisher" name="camera_broadcaster" args="0 0.125 2.35 0 1.57 0 base_link camera_link 100" /-->
+
+  <!-- Run Rviz and load the xtion config -->
+  <!--node pkg="rviz" args="-d $(find ur5_iml_moveit_config)/rviz_config/rviz_config_fake_execution.rviz" type="rviz" name="rviz" output="screen" respawn="false">
+  </node-->
+
+</launch>

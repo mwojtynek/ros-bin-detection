@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.70.0 commit date:2014-04-10, commit time:11:49, hash:f93bc76</authoring_tool>
+    </contributor>
+    <created>2014-04-23T16:32:49</created>
+    <modified>2014-04-23T16:32:49</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera.001">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Sun-light" name="Sun">
+      <technique_common>
+        <directional>
+          <color sid="color">1 1 1</color>
+        </directional>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <adapt_thresh>0.000999987</adapt_thresh>
+          <area_shape>0</area_shape>
+          <area_size>0.1</area_size>
+          <area_sizey>0.1</area_sizey>
+          <area_sizez>0.1</area_sizez>
+          <atm_distance_factor>1</atm_distance_factor>
+          <atm_extinction_factor>1</atm_extinction_factor>
+          <atm_turbidity>2</atm_turbidity>
+          <att1>0</att1>
+          <att2>1</att2>
+          <backscattered_light>1</backscattered_light>
+          <bias>1</bias>
+          <blue>1</blue>
+          <buffers>1</buffers>
+          <bufflag>0</bufflag>
+          <bufsize>512</bufsize>
+          <buftype>2</buftype>
+          <clipend>40</clipend>
+          <clipsta>0.5</clipsta>
+          <compressthresh>0.04999995</compressthresh>
+          <dist sid="blender_dist">25</dist>
+          <energy sid="blender_energy">1</energy>
+          <falloff_type>2</falloff_type>
+          <filtertype>0</filtertype>
+          <flag>0</flag>
+          <gamma sid="blender_gamma">1</gamma>
+          <green>1</green>
+          <halo_intensity sid="blnder_halo_intensity">1</halo_intensity>
+          <horizon_brightness>1</horizon_brightness>
+          <mode>1</mode>
+          <ray_samp>1</ray_samp>
+          <ray_samp_method>1</ray_samp_method>
+          <ray_samp_type>0</ray_samp_type>
+          <ray_sampy>1</ray_sampy>
+          <ray_sampz>1</ray_sampz>
+          <red>1</red>
+          <samp>3</samp>
+          <shadhalostep>0</shadhalostep>
+          <shadow_b sid="blender_shadow_b">0</shadow_b>
+          <shadow_g sid="blender_shadow_g">0</shadow_g>
+          <shadow_r sid="blender_shadow_r">0</shadow_r>
+          <sky_colorspace>2</sky_colorspace>
+          <sky_exposure>1</sky_exposure>
+          <skyblendfac>1</skyblendfac>
+          <skyblendtype>1</skyblendtype>
+          <soft>3</soft>
+          <spotblend>0.15</spotblend>
+          <spotsize>45</spotsize>
+          <spread>1</spread>
+          <sun_brightness>1</sun_brightness>
+          <sun_effect_type>0</sun_effect_type>
+          <sun_intensity>1</sun_intensity>
+          <sun_size>1</sun_size>
+          <type>1</type>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images/>
+  <library_effects>
+    <effect id="Plexi-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.564981 0.6127328 0.6376185 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.4479317 0.5 0.456441 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <transparency>
+              <float sid="transparency">0.3310345</float>
+            </transparency>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Holz_weiÃ_-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.3633094 0.3633094 0.3633094 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0 0 0 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.02348048 0.02348048 0.02348048 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Plexi-material" name="Plexi">
+      <instance_effect url="#Plexi-effect"/>
+    </material>
+    <material id="Holz_weiÃ_-material" name="Holz_weiÃ_">
+      <instance_effect url="#Holz_weiÃ_-effect"/>
+    </material>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="schraege_rechts-mesh" name="schraege rechts">
+      <mesh>
+        <source id="schraege_rechts-mesh-positions">
+          <float_array id="schraege_rechts-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 0.4258401 1 -1 0.4258401</float_array>
+          <technique_common>
+            <accessor source="#schraege_rechts-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="schraege_rechts-mesh-normals">
+          <float_array id="schraege_rechts-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0.2759345 0 0.9611765 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0.2759345 0 0.9611765</float_array>
+          <technique_common>
+            <accessor source="#schraege_rechts-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="schraege_rechts-mesh-vertices">
+          <input semantic="POSITION" source="#schraege_rechts-mesh-positions"/>
+        </vertices>
+        <polylist material="Plexi-material" count="12">
+          <input semantic="VERTEX" source="#schraege_rechts-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#schraege_rechts-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 6 1 2 1 1 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 5 7 6 7 1 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="schraege_links-mesh" name="schraege links">
+      <mesh>
+        <source id="schraege_links-mesh-positions">
+          <float_array id="schraege_links-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 0.4258401 1 -1 0.4258401</float_array>
+          <technique_common>
+            <accessor source="#schraege_links-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="schraege_links-mesh-normals">
+          <float_array id="schraege_links-mesh-normals-array" count="24">-0.4968108 -0.5640431 0.6595355 -0.4968108 0.5640431 0.6595355 -0.5773492 0.5773492 -0.5773492 0.6428419 0.593463 0.4842372 0.5773492 0.5773492 -0.5773492 0.6428419 -0.593463 0.4842372 0.5773492 -0.5773492 -0.5773492 -0.5773492 -0.5773492 -0.5773492</float_array>
+          <technique_common>
+            <accessor source="#schraege_links-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="schraege_links-mesh-vertices">
+          <input semantic="POSITION" source="#schraege_links-mesh-positions"/>
+        </vertices>
+        <polylist material="Plexi-material" count="12">
+          <input semantic="VERTEX" source="#schraege_links-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#schraege_links-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 1 1 2 6 3 2 4 1 2 6 3 7 5 3 6 7 5 4 0 0 7 0 7 1 2 2 4 7 5 6 3 5 1 0 7 4 0 1 2 5 1 6 3 1 2 2 4 6 3 3 6 3 6 7 5 0 7 3 6 0 7 2 4 4 0 7 5 5 1</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Wand_links-mesh" name="Wand links">
+      <mesh>
+        <source id="Wand_links-mesh-positions">
+          <float_array id="Wand_links-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1</float_array>
+          <technique_common>
+            <accessor source="#Wand_links-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wand_links-mesh-normals">
+          <float_array id="Wand_links-mesh-normals-array" count="24">-0.5773492 -0.5773492 0.5773492 -0.5773492 0.5773492 0.5773492 -0.5773492 0.5773492 -0.5773492 0.5773492 0.5773492 0.5773492 0.5773492 0.5773492 -0.5773492 0.5773492 -0.5773492 0.5773492 0.5773492 -0.5773492 -0.5773492 -0.5773492 -0.5773492 -0.5773492</float_array>
+          <technique_common>
+            <accessor source="#Wand_links-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Wand_links-mesh-vertices">
+          <input semantic="POSITION" source="#Wand_links-mesh-positions"/>
+        </vertices>
+        <polylist material="Plexi-material" count="12">
+          <input semantic="VERTEX" source="#Wand_links-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wand_links-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 1 1 2 5 1 6 3 2 4 6 3 7 5 3 6 7 5 4 0 0 7 0 7 1 2 2 4 7 5 6 3 5 1 0 7 4 0 1 2 1 2 5 1 2 4 2 4 6 3 3 6 3 6 7 5 0 7 3 6 0 7 2 4 4 0 7 5 5 1</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Hauptplatte-mesh" name="Hauptplatte">
+      <mesh>
+        <source id="Hauptplatte-mesh-positions">
+          <float_array id="Hauptplatte-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1</float_array>
+          <technique_common>
+            <accessor source="#Hauptplatte-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Hauptplatte-mesh-normals">
+          <float_array id="Hauptplatte-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Hauptplatte-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Hauptplatte-mesh-vertices">
+          <input semantic="POSITION" source="#Hauptplatte-mesh-positions"/>
+        </vertices>
+        <polylist material="Holz_weiÃ_-material" count="12">
+          <input semantic="VERTEX" source="#Hauptplatte-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Hauptplatte-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 5 1 6 1 2 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 1 7 5 7 2 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Roboter_Sockel-mesh" name="Roboter Sockel">
+      <mesh>
+        <source id="Roboter_Sockel-mesh-positions">
+          <float_array id="Roboter_Sockel-mesh-positions-array" count="24">-3.414634 -4.149485 0 -3.414634 -2.175258 0 -1.414634 -2.175258 0 -1.414634 -4.149485 0 -3.414634 -4.149485 2 -3.414634 -2.175258 2 -1.414634 -2.175258 2 -1.414634 -4.149485 2</float_array>
+          <technique_common>
+            <accessor source="#Roboter_Sockel-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Roboter_Sockel-mesh-normals">
+          <float_array id="Roboter_Sockel-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Roboter_Sockel-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Roboter_Sockel-mesh-vertices">
+          <input semantic="POSITION" source="#Roboter_Sockel-mesh-positions"/>
+        </vertices>
+        <polylist material="Holz_weiÃ_-material" count="12">
+          <input semantic="VERTEX" source="#Roboter_Sockel-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Roboter_Sockel-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 5 1 6 1 2 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 1 7 5 7 2 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Rueckwand-mesh" name="Rueckwand">
+      <mesh>
+        <source id="Rueckwand-mesh-positions">
+          <float_array id="Rueckwand-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1</float_array>
+          <technique_common>
+            <accessor source="#Rueckwand-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Rueckwand-mesh-normals">
+          <float_array id="Rueckwand-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Rueckwand-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Rueckwand-mesh-vertices">
+          <input semantic="POSITION" source="#Rueckwand-mesh-positions"/>
+        </vertices>
+        <polylist material="Holz_weiÃ_-material" count="12">
+          <input semantic="VERTEX" source="#Rueckwand-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Rueckwand-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 5 1 6 1 2 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 1 7 5 7 2 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Tischfront-mesh" name="Tischfront">
+      <mesh>
+        <source id="Tischfront-mesh-positions">
+          <float_array id="Tischfront-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 0.7297559 1 -1 0.7297559</float_array>
+          <technique_common>
+            <accessor source="#Tischfront-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Tischfront-mesh-normals">
+          <float_array id="Tischfront-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0.1339051 0 0.9909942 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0.1339051 0 0.9909942</float_array>
+          <technique_common>
+            <accessor source="#Tischfront-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Tischfront-mesh-vertices">
+          <input semantic="POSITION" source="#Tischfront-mesh-positions"/>
+        </vertices>
+        <polylist material="Holz_weiÃ_-material" count="12">
+          <input semantic="VERTEX" source="#Tischfront-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Tischfront-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 6 1 2 1 1 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 5 7 6 7 1 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Wand_rechts-mesh" name="Wand rechts">
+      <mesh>
+        <source id="Wand_rechts-mesh-positions">
+          <float_array id="Wand_rechts-mesh-positions-array" count="39">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1 -1 0 1 0 1 1 1 0 1 0 -1 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Wand_rechts-mesh-positions-array" count="13" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Wand_rechts-mesh-normals">
+          <float_array id="Wand_rechts-mesh-normals-array" count="66">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Wand_rechts-mesh-normals-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Wand_rechts-mesh-vertices">
+          <input semantic="POSITION" source="#Wand_rechts-mesh-positions"/>
+        </vertices>
+        <polylist material="Plexi-material" count="22">
+          <input semantic="VERTEX" source="#Wand_rechts-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Wand_rechts-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>8 0 1 0 0 0 9 1 2 1 1 1 10 2 3 2 2 2 11 3 0 3 3 3 0 4 1 4 2 4 12 5 9 5 5 5 11 6 12 6 8 6 7 7 10 7 12 7 10 8 6 8 9 8 0 9 4 9 8 9 8 10 5 10 1 10 1 11 5 11 9 11 9 12 6 12 2 12 2 13 6 13 10 13 10 14 7 14 3 14 3 15 7 15 11 15 11 16 4 16 0 16 3 17 0 17 2 17 8 18 12 18 5 18 4 19 11 19 8 19 11 20 7 20 12 20 12 21 10 21 9 21</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Kamerahalterung_v-mesh" name="Kamerahalterung_v">
+      <mesh>
+        <source id="Kamerahalterung_v-mesh-positions">
+          <float_array id="Kamerahalterung_v-mesh-positions-array" count="24">28.87386 -1 -1.823285 28.87386 1 -1.823285 30.87386 1 -1.823285 30.87386 -1 -1.823285 28.87386 -1 0.1767148 28.87386 1 0.1767148 30.87386 1 0.1767148 30.87386 -1 0.1767148</float_array>
+          <technique_common>
+            <accessor source="#Kamerahalterung_v-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Kamerahalterung_v-mesh-normals">
+          <float_array id="Kamerahalterung_v-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Kamerahalterung_v-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Kamerahalterung_v-mesh-vertices">
+          <input semantic="POSITION" source="#Kamerahalterung_v-mesh-positions"/>
+        </vertices>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Kamerahalterung_v-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Kamerahalterung_v-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 5 1 6 1 2 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 1 7 5 7 2 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Verbindung_Kamerahalterung-mesh" name="Verbindung_Kamerahalterung">
+      <mesh>
+        <source id="Verbindung_Kamerahalterung-mesh-positions">
+          <float_array id="Verbindung_Kamerahalterung-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 -1.000001 1 -1 -1.000001 -1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1</float_array>
+          <technique_common>
+            <accessor source="#Verbindung_Kamerahalterung-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Verbindung_Kamerahalterung-mesh-normals">
+          <float_array id="Verbindung_Kamerahalterung-mesh-normals-array" count="36">-1 0 0 0 1 0 0.7071066 0 -0.707107 0 1 0 0 0 1 0 0 1 -1 0 0 0 -1 0 0.7071066 0 -0.707107 0 -1 0 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Verbindung_Kamerahalterung-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Verbindung_Kamerahalterung-mesh-vertices">
+          <input semantic="POSITION" source="#Verbindung_Kamerahalterung-mesh-positions"/>
+        </vertices>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Verbindung_Kamerahalterung-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Verbindung_Kamerahalterung-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 5 1 6 1 2 1 6 2 7 2 3 2 4 3 0 3 3 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 1 7 5 7 2 7 2 8 6 8 3 8 7 9 4 9 3 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Fernseher-mesh" name="Fernseher">
+      <mesh>
+        <source id="Fernseher-mesh-positions">
+          <float_array id="Fernseher-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1</float_array>
+          <technique_common>
+            <accessor source="#Fernseher-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Fernseher-mesh-normals">
+          <float_array id="Fernseher-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Fernseher-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Fernseher-mesh-vertices">
+          <input semantic="POSITION" source="#Fernseher-mesh-positions"/>
+        </vertices>
+        <polylist material="Material-material" count="12">
+          <input semantic="VERTEX" source="#Fernseher-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Fernseher-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 5 1 6 1 2 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 1 7 5 7 2 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Cube-mesh" name="Cube">
+      <mesh>
+        <source id="Cube-mesh-positions">
+          <float_array id="Cube-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh-normals">
+          <float_array id="Cube-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube-mesh-vertices">
+          <input semantic="POSITION" source="#Cube-mesh-positions"/>
+        </vertices>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>4 0 5 0 1 0 5 1 6 1 2 1 6 2 7 2 3 2 7 3 4 3 0 3 0 4 1 4 2 4 7 5 6 5 5 5 0 6 4 6 1 6 1 7 5 7 2 7 2 8 6 8 3 8 3 9 7 9 0 9 3 10 0 10 2 10 4 11 7 11 5 11</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="schraege_rechts" name="schraege_rechts" type="NODE">
+        <matrix sid="transform">0.2 0 0 0.5 0 0.002 0 0.8080001 0 0 0.395 1.405 0 0 0 1</matrix>
+        <instance_geometry url="#schraege_rechts-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Plexi-material" target="#Plexi-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Wand_links" name="Wand_links" type="NODE">
+        <matrix sid="transform">0.5 0 0 -0.2 0 0.0025 0 -0.8075 0 0 0.395 1.405 0 0 0 1</matrix>
+        <instance_geometry url="#Wand_links-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Plexi-material" target="#Plexi-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <node id="schraege_links" name="schraege_links" type="NODE">
+          <matrix sid="transform">0.4 0 0 1.4 0 0.8 0 -0.2181396 0 0 1 2.38419e-7 0 0 0 1</matrix>
+          <instance_geometry url="#schraege_links-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Plexi-material" target="#Plexi-material"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">-4.351418 -0.04194997 0.1571292 0.6245818 0.1520416 -2.54272 3.531678 6.734402 0.05772975 3.534701 2.54241 5.66162 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Sun" name="Sun" type="NODE">
+        <matrix sid="transform">0.4011829 -0.9052076 0.1401834 0.4441546 0.8430458 0.4247324 0.329964 2.652125 -0.3582264 -0.01419484 0.9335268 4.89422 0 0 0 1</matrix>
+        <instance_light url="#Sun-light"/>
+      </node>
+      <node id="Hauptplatte" name="Hauptplatte" type="NODE">
+        <matrix sid="transform">0.7 0 0 0 0 0.81 0 0 0 0 0.505 0.505 0 0 0 1</matrix>
+        <instance_geometry url="#Hauptplatte-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Holz_weiÃ_-material" target="#Holz_weiÃ_-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Roboter_Sockel" name="Roboter_Sockel" type="NODE">
+        <matrix sid="transform">0.205 0 0 0 0 0.194 0 0 0 0 0.13 1.01 0 0 0 1</matrix>
+        <instance_geometry url="#Roboter_Sockel-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Holz_weiÃ_-material" target="#Holz_weiÃ_-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Rueckwand" name="Rueckwand" type="NODE">
+        <matrix sid="transform">0.005 0 0 -0.695 0 0.81 0 0 0 0 0.495 1.501291 0 0 0 1</matrix>
+        <instance_geometry url="#Rueckwand-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Holz_weiÃ_-material" target="#Holz_weiÃ_-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Tischfront" name="Tischfront" type="NODE">
+        <matrix sid="transform">0.13 0 0 0.83 0 0.81 0 0 0 0 0.505 0.505 0 0 0 1</matrix>
+        <instance_geometry url="#Tischfront-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Holz_weiÃ_-material" target="#Holz_weiÃ_-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Wand_rechts" name="Wand_rechts" type="NODE">
+        <matrix sid="transform">0.5 0 0 -0.2 0 0.0025 0 0.8075 0 0 0.395 1.405 0 0 0 1</matrix>
+        <instance_geometry url="#Wand_rechts-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Plexi-material" target="#Plexi-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Kamerahalterung_v" name="Kamerahalterung_v" type="NODE">
+        <matrix sid="transform">0.02 0 0 -1.317477 0 0.02 0 0 0 0 1.205 2.197059 0 0 0 1</matrix>
+        <instance_geometry url="#Kamerahalterung_v-mesh"/>
+      </node>
+      <node id="Verbindung_Kamerahalterung" name="Verbindung_Kamerahalterung" type="NODE">
+        <matrix sid="transform">0.04 0 0 -0.66 0 0.02 0 0 0 0 0.04 2.37 0 0 0 1</matrix>
+        <instance_geometry url="#Verbindung_Kamerahalterung-mesh"/>
+      </node>
+      <node id="Fernseher" name="Fernseher" type="NODE">
+        <matrix sid="transform">0.0375 0 0 -0.6525 0 0.535 0 0.1734554 0 0 0.31 1.636588 0 0 0 1</matrix>
+        <instance_geometry url="#Fernseher-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Cube" name="Cube" type="NODE">
+        <matrix sid="transform">0.3 0 0 -0.4 0 0.02 0 0 0 0 0.02 2.43 0 0 0 1</matrix>
+        <instance_geometry url="#Cube-mesh"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

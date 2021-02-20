@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: iml_pick_in_bin_data
+    relative_path: data/ur5_iml.urdf.xacro
+  SRDF:
+    relative_path: config/ur5_iml.srdf
+  CONFIG:
+    generated_timestamp: 1415964380
