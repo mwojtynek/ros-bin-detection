@@ -1,5 +1,7 @@
 ## ros-bin-detection
 
+Software Stack for bin detection and MoveIt planning: https://youtu.be/SRn_uwcKheE
+<br><br>
 The software runs under the robot framework ROS (version: Hydro Release) and starts with the following commands in the Linux console:
 
 ### Launch the robot UR5 Universal Robots driver:
